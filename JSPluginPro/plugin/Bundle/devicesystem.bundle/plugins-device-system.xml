@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<plugin>
+    <!--外设模块扩展-->
+    <extension point="fox.device">
+        <!--yu_ccb-->
+        <device class="yu_ccbM" scope="singleton"
+            type="yu_ccbM" typeName="yuM" devId="yu_ccbM-plugindevice" devName="yu_ccbM测试"></device>
+        <device class="yu_ccbM" scope="singleton"
+            type="yu_ccbM" typeName="yux" devId="yu_ccbM-plugindevice" devName="yu_ccbM测试"></device>
+        
+        <device class="sms" scope="singleton"
+            type="sms" typeName="smsData" devId="smsData-plugindevice" devName="sms测试"></device>
+    </extension>
+</plugin>
+</configuration>

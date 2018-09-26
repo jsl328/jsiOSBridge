@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    
+    <plugin>
+        <!--device接口模块扩展-->
+        <extension point="fox.device">
+            <!--<native type="ic" class="">-->
+            <!--</native>-->
+        </extension>
+        
+        <!--native接口模块扩展-->
+        <extension point="fox.native">
+            <!--<native action="location" class="">-->
+            <!--</native>-->
+        </extension>
+        <!--http接口模块扩展-->
+        <extension point="fox.http">
+            <!--<native type="ic" class="">-->
+            <!--</native>-->
+        </extension>
+        <!--界面访问代理-->
+        <extension point="fox.plus">
+            <!--<native type="ic" class="">-->
+            <!--</native>-->
+        </extension>
+    </plugin>
+    <preference name="ProductEnvironment" value="false" />
+</configuration>
+

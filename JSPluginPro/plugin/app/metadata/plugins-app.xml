@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <!--device接口模块扩展-->
+    <extension point="fox.device">
+        <!--<native type="ic" class="">-->
+        <!--</native>-->
+    </extension>
+
+    <!--native接口模块扩展-->
+    <extension point="fox.native">
+        <!--<native action="location" class="">-->
+        <!--</native>-->
+    </extension>
+    <!--http接口模块扩展-->
+    <extension point="fox.http">
+        <!--<native type="ic" class="">-->
+        <!--</native>-->
+    </extension>
+</plugin>
+

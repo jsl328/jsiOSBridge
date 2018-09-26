@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <plugin>
+        <!--启动模块扩展-->
+        <extension point="fox.boot">
+<!--            <boot name="versionUpdate" class="VersionManager" text="版本管理器">-->
+<!--            </boot>-->
+            <boot name="evnReady" class="EnvReady" text="环境准备器">
+<!--                <depend name="versionUpdate"></depend>-->
+            </boot>
+            <boot name="proxyLoader" class="ProxyLauncher" text="代理加载器">
+<!--                <depend name="versionUpdate"></depend>-->
+            </boot>
+        </extension>
+        
+        <!--代理模块扩展-->
+        <extension point="fox.proxy">
+            <!-- NATIVEBO      _FOX_PROXY_NATIVE     -->
+            <proxy name="_FOX_PROXY_NATIVE" class="NativeProxy" text="本地接口代理">
+            </proxy>
+            <!--NATIVEBO _FOX_PROXY_DEVICE-->
+            <proxy name="NATIVEBO" class="DeviceProxy" text="外设代理">
+            </proxy>
+        </extension>
+        
+        <!--native接口模块扩展-->
+        <extension point="fox.native">
+            <native action="yuN" class="yu_ccbN" scope="singleton"  priority="3">
+            </native>
+        </extension>
+        
+        <!--security接口模块扩展-->
+        <extension point="fox.security">
+        </extension>
+        
+        <!--http接口模块扩展-->
+        <extension point="fox.http">
+        </extension>
+        <!--界面访问代理-->
+        <extension point="fox.plus">
+        </extension>
+        
+        <!--外设模块扩展-->
+        <extension point="fox.device">
+            <!--yu_ccb-->
+            <device class="yu_ccbM" scope="singleton"
+                type="yuM" typeName="yu_ccbM测试" devId="yu_ccbM-plugindevice" devName="yu_ccbM测试"></device>
+        </extension>
+    </plugin>
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
